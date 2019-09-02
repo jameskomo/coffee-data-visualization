@@ -29,7 +29,7 @@ trace1=[(go.Scatter(x=list(x_plot),y=list(y_plot),mode='lines',
     opacity=0.7,text='(Date, Production Qty)',textposition='bottom center'))]
 ##  The data for the line is inserted. Then, the line is modified.
 
-fig = {'data': trace1,'layout': go.Layout(annotations=[
+# fig = {'data': trace1,'layout': go.Layout(annotations=[
             go.layout.Annotation(
                 text='Data: USDA PS&D',
                 align='right',
