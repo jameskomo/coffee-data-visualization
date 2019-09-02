@@ -10,7 +10,7 @@ import pandas as pd
 
 df = pd.read_json("https://api.myjson.com/bins/17ossf.json")  ##  Data retrieved.
 
-fig = go.Figure()  ##  Figure created
+# fig = go.Figure()  ##  Figure created
 
 x_plot = []  ##  Arranging the x axis data to be showed on the plot
 for i in range(len(df[0])):
