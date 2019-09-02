@@ -4,10 +4,9 @@ from plotly.offline import plot
 import plotly.graph_objects as go  
 import pandas as pd  
 
-##  The data can not be read from the given URL, since it is a 'Drive' URL.
-#  Therefore, the data is copied and saved as an URL in web, using the website 'myjson.com'
-##  The URL, we get is accecable by Python, with the given URL:
-##  https://api.myjson.com/bins/17ossf
+##  The data can not be read from the given Link, since it is a 'Drive' Link
+##  Therefore, the data is copied and saved as an URL in web, using the website 'myjson.com'
+##  The URL created is accessible on the web through https://api.myjson.com/bins/17ossf
 
 df = pd.read_json("https://api.myjson.com/bins/17ossf.json")  ##  Data retrieved.
 
