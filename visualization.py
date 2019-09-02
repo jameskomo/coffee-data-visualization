@@ -16,7 +16,9 @@ x_plot = []  ##  Arranging the x axis data to be showed on the plot
 for i in range(len(df[0])):
     x_plot.append(df[0][i])
     x_plot.append(df[1][i])
-    
+
+print(x_plot)
+
 y_plot = [df[2][0]]  ##  Arranging the y axis data to be showed on the plot
 for i in range(len(df[2])):
     y_plot.append(df[2][i])
@@ -43,4 +45,4 @@ fig = {'data': trace1,'layout': go.Layout(annotations=[
             xaxis={'rangeslider': {'visible': True}, 'type': 'date'},yaxis={"title":"Quantity in tonnes"})}
 ##  Figure itself is modified. Rangeslider has been added.
 
-plot(fig)  ##  Plot the constructed figure
+# plot(fig)  ##  Plot the constructed figure
