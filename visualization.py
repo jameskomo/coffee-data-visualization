@@ -45,4 +45,4 @@ fig = {'data': trace1,'layout': go.Layout(annotations=[
             xaxis={'rangeslider': {'visible': True}, 'type': 'date'},yaxis={"title":"Quantity in tonnes"})}
 ##  Figure itself is modified. Rangeslider has been added.
 
-plot(fig)  ##  Plot the constructed figure
+# plot(fig)  ##  Plot the constructed figure
