@@ -4,9 +4,9 @@
 ##  Plotly is a package used for interactive plot, such as this one
 ##  To use it also offline, since Python is tricky with plot, we need to write the code above in Spyder.
 
-from plotly.offline import plot  ##  For being able to interact with plot 
-import plotly.graph_objects as go  ##  To create the plots
-import pandas as pd  ##  To work with JSON data
+# from plotly.offline import plot  ##  For being able to interact with plot 
+# import plotly.graph_objects as go  ##  To create the plots
+# import pandas as pd  ##  To work with JSON data
 
 ##  The data can not be read from the given URL, since it is a 'Drive' URL.
 ##  Therefore, the data is copied and saved as an URL in web, using the website 'myjson.com'
