@@ -8,18 +8,18 @@ import pandas as pd
 ##  Therefore, the data is copied and saved as an URL in web, using the website 'myjson.com'
 ##  The URL created is accessible on the web through https://api.myjson.com/bins/17ossf
 
-df = pd.read_json("https://api.myjson.com/bins/17ossf.json")  ##  Data retrieved.
+df = pd.read_json("https://api.myjson.com/bins/17ossf.json")  
 
-fig = go.Figure()  ##  Figure created
+fig = go.Figure()  
 
-x_plot = []  ##  Arranging the x axis data to be showed on the plot
+x_plot = []  ##  Arranging the x axis data to be shown on the plot
 for i in range(len(df[0])):
     x_plot.append(df[0][i])
     x_plot.append(df[1][i])
 
 print(x_plot)
 
-y_plot = [df[2][0]]  ##  Arranging the y axis data to be showed on the plot
+y_plot = [df[2][0]]  ##  Arranging the y axis data to be shown on the plot
 for i in range(len(df[2])):
     y_plot.append(df[2][i])
     y_plot.append(df[2][i])
@@ -45,4 +45,4 @@ fig = {'data': trace1,'layout': go.Layout(annotations=[
             xaxis={'rangeslider': {'visible': True}, 'type': 'date'},yaxis={"title":"Quantity in tonnes"})}
 ##  Figure itself is modified. Rangeslider has been added.
 
-# plot(fig)  ##  Plot the constructed figure
+plot(fig)  ##  Plot the constructed figure
